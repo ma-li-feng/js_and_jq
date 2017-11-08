@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天涯明月刀-官方网站-腾讯游戏-全新公测资料片“沧海云帆”震撼上线！</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="javaScript/jquery-1.12.4.js"></script>
+    <script>
+
+       $(function (){
+           var TopY = document.getElementById("Y_Top");
+           var qinY = TopY.firstElementChild;
+           var ulY = qinY.children[0];
+           var lisY = ulY.children;
+           var iy = [];
+           for (var i = 1; i < lisY.length; i++) {
+               lisY[i].style.left = 392 + 68 * (i - 1) + "px";
+               var iY = lisY[i].children[0];
+               iY.style.width = 68 + "px";
+               iY.style.height = 299 + "px";
+               iY.style.display = "block";
+               iY.style.float = " left";
+               iY.style.backgroundImage = "url(images/fans.jpg)";
+               iY.style.backgroundPositionX =  -68 * (i - 1)+ "px";
+               iy.push(-68 * (i - 1));
+           }
+          var lisY = $("#Y_ul").children();
+          var isY = lisY.children("i");
+           isY.click(function () {
+           for (var i = 0; i < isY.length; i++) {
+               console.log(1);
+               isY[i].style.backgroundPositionX=iy[i]+"px"
+           }
+           var fuY = $(this).parent();
+           var index =fuY.index();
+           var target = -68 * (5 + index);
+           $(this).css("backgroundPositionX",target);
+     		$(this).parent().animate({left:($(this).parent().index()-1)*68},400);
+         })
+
+       });
+       /*----------------------------------------------------*/
+      $(function () {
+        var liY = $(".Y_four").children("li");
+        liY.mouseover(function () {
+          var aS =$(this).children("a");
+          aS.stop().animate({paddingTop: 60},250, "linear");
+          aS.siblings().stop().animate({
+            top: -52,
+            opacity: 0
+          },250, "linear")
+        });
+        liY.mouseleave(function () {
+          var aS =$(this).children("a");
+          aS.stop().animate({paddingTop: 90},250, "linear");
+          aS.siblings().stop().animate({
+            top: 28,
+            opacity: 1
+          },250, "linear")
+        })
+      })
+    </script>
+</head>
+<body>
+<div id="Y_mainY">
+    <div id="Y_lfl">
+        <ul class="Y_list2">
+            <li><a href="#"><i><img src="images/yifu.png" alt=""></i>天衣阁</a></li>
+            <li><a href="#"><i><img src="images/fang.png" alt=""></i>同人站</a></li>
+            <li><a href="#"><i><img src="images/jian.png" alt=""></i>精英服</a></li>
+            <li><a href="#"><i><img src="images/che.png" alt=""></i>道具城</a></li>
+            <li><a href="#"><i><img src="images/xinyue.png" alt=""></i>心悦特权</a></li>
+            <li><a href="#"><i><img src="images/erji.png" alt=""></i>原声大碟</a></li>
+            <li><a href="#"><i><img src="images/kefu.png" alt=""></i>账号安全</a></li>
+            <li><a href="#"><i><img src="images/qq.png" alt=""></i>在线客服</a></li>
+        </ul>
+        <div class="Y_lian">
+            <span><a href="#">天刀助手</a></span>
+            <span><a href="#">官方微信</a></span>
+            <div class="Y_ma"></div>
+        </div>
+        <ul class="Y_wailian">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <div id="Y_rgj">
+        <div id="Y_Top">
+            <div id="Y_qin">
+                <ul id="Y_ul">
+                    <li>
+                        <span>
+                            <h3>同人推荐</h3>
+                            <a href="#"><img src="images/tuijian1.jpg" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/tuijian2.jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">【17173】休宝课堂天刀专场开启 免费学做视频</a><i>9/20</i></li>
+                                <li><a href="#">血海飘香月照（竹御）《歌曲串烧混剪》</a><i>9/20</i></li>
+                                <li><a href="#">【姿祈】三寸天堂（那天堂是我爱过你的地方 ...）</a><i>9/20</i></li>
+                                <li><a href="#">浪迹天涯第二十话：唯有丐帮 天刀四格漫画</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人视频</h3>
+                            <a href="#"><img src="images/296.jpg" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/296%20(1).jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">【差不多先生】天刀有嘻哈</a><i>9/20</i></li>
+                                <li><a href="#">江湖夜话第七期 山水有相逢 望君多珍重</a><i>9/20</i></li>
+                                <li><a href="#">门派鬼畜系列 我云滇的蛮腰就是不一样</a><i>9/20</i></li>
+                                <li><a href="#">【天涯明月刀OL】怡红院开张啦-血海飘香月照</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人音乐</h3>
+                            <a href="#"><img src="images/yinyue1.png" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/yinyue2.png" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">乐伶自由演奏《何必诗债换酒钱》</a><i>9/20</i></li>
+                                <li><a href="#">《陌上花开》一眼藏锋谷下，归来仍是少年</a><i>9/20</i></li>
+                                <li><a href="#">翻唱MV《丹青客》假如我只有三日记忆</a><i>9/20</i></li>
+                                <li><a href="#">成女与少女的唯美时装转换秀</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人绘画</h3>
+                            <a href="#"><img src="images/hua1.jpg" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/hua2.jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">红</a><i>9/20</i></li>
+                                <li><a href="#">思念</a><i>9/20</i></li>
+                                <li><a href="#">浪迹天涯第二十话：唯有丐帮 天刀四格漫画</a><i>9/20</i></li>
+                                <li><a href="#">天刀明玉</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人小说</h3>
+                            <a href="#"><img src="images/xiaoshuo1.png" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/xiaoshuo2.jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">【天刀征文大赛2017】钱塘夜话</a><i>9/20</i></li>
+                                <li><a href="#">燕柯与剑</a><i>9/20</i></li>
+                                <li><a href="#">江湖少年不知愁（2）</a><i>9/20</i></li>
+                                <li><a href="#">一念  （天香X真武）</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人周边</h3>
+                            <a href="#"><img src="images/bian1.png" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/bian2.jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">天刀兵器谱-天香</a><i>9/20</i></li>
+                                <li><a href="#">【绾茕绘卷】手绘红叶折扇丶七夕赠礼</a><i>9/20</i></li>
+                                <li><a href="#">【天刀同人之星2017】钥匙包——真武</a><i>9/20</i></li>
+                                <li><a href="#">神威新版本武器合集</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                    <li>
+                        <i></i>
+                        <span>
+                            <h3>同人COS</h3>
+                            <a href="#"><img src="images/cos1.jpg" alt="" width="170px" height="110px"></a>
+                            <a href="#"><img src="images/cos2.jpg" alt="" width="170px" height="110px"></a>
+                            <ul>
+                                <li><a href="#">“天刀同人之星2017”“五毒”彩雉青纹cos</a><i>9/20</i></li>
+                                <li><a href="#">“天刀同人之星2017”“半青少女”</a><i>9/20</i></li>
+                                <li><a href="#">“天刀同人之星2017”五毒彩雉青纹cos</a><i>9/20</i></li>
+                                <li><a href="#">#天刀同人之星2017# 相见欢·五毒</a><i>9/20</i></li>
+                            </ul>
+                            <p>
+                                <a href="#">投稿参与</a>
+                                <a href="#">更多+</a>
+                            </p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div id="Y_Right">
+                <ul class="Y_four">
+                    <li><i></i><a href="#">视频</a></li>
+                    <li><i></i><a href="#">壁纸</a></li>
+                    <li><i></i><a href="#">原画</a></li>
+                    <li><i></i><a href="#">音乐</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="Y_center">
+            <div id="Y_zuo"></div>
+            <div id="Y_zhong"></div>
+            <div id="Y_you"></div>
+        </div>
+        <div id="Y_bottom">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--<script src="javaScript/Yang.js"></script>-->
+</body>
+</html>
